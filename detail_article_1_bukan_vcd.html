@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Hidup Bukanlah VCD Player</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/detail_artikel.css">
+		<script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!-- shadow -->
+		<div id="background">
+			<div class="shadow"></div>
+		</div>
+
+		<header>
+			<span id="btnShow">
+				<i class="fa fa-bars"></i>
+			</span>
+			<nav id="header">
+				<div id="web-name">Re-Up</div>
+				<hr>
+				<ul>
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<i class="fa fa-image"></i>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<i class="fa fa-users"></i>
+						<a href="about.html">About Us</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<div class="header">
+				<a href="article.html">
+					<div class="back">
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+					</div>
+				</a>
+				<h1>
+					Re-Up
+				</h1>
+			</div>
+			<div class="content-image">
+				<div class="image">
+					<img src="images/artikel/4.jpg">
+				</div>
+			</div>
+			<div class="content-article">
+				<h2>HIDUP BUKANLAH VCD PLAYER</h2>
+				<hr class="hr">
+				<div class="text">
+					<p>Cerita ini adalah "kisah nyata" yang pernah terjadi di Amerika. Seorang pria membawa pulang truk baru kebanggaannya,kemudian ia meninggalkan truk tersebut sejenak untuk melakukan kegiatan lain. Anak lelakinya yang berumur 3 tahun sangat gembira
+						melihat ada truk baru, ia memukul-mukulkan palu ke truk baru tersebut. Akibatnya truk baru tersebut penyok dan catnya tergores. Pria tersebut berlari menghampiri anaknya dan memukulnya, memukul tangan anaknya dengan palu sebagai hukuman. Setelah sang
+						ayah tenang kembali, dia segera membawa anaknya ke rumah sakit. Walaupun dokter telah mencoba segala usaha untuk menyelamatkan jari- jari anak yang hancur tersebut, tetapi ia tetap gagal. Akhirnya dokter memutuskan untuk melakukan amputasi semua jari
+						pada kedua tangan anak kecil tersebut. Ketika anak kecil itu sadar dari operasi amputasi dan jarinya telah Tidak ada dan dibungkus perban, dengan polos ia berkata, "Papa, aku minta maaf tentang trukmu." Kemudian, ia bertanya,"tetapi kapan jari-jariku
+						akan tumbuh kembali?" Ayahnya pulang ke rumah dan melakukan bunuh diri.
+						<br>
+						<br>
+						Renungkan cerita di atas! Berpikirlah dahulu sebelum kau kehilangan kesabaran kepada seseorang yang kau cintai. Truk dapat diperbaiki. Tulang yang hancur dan hati yang disakiti seringkali tidak dapat diperbaiki. Terlalu sering kita gagal untuk
+						membedakan antara orang dan perbuatannya, kita seringkali lupa bahwa mengampuni lebih besar daripada membalas dendam. Orang dapat berbuat salah. Tetapi, tindakan yang kita ambil dalam kemarahan akan menghantui kita selamanya. Tahan, tunda dan
+						pikirkan sebelum mengambil tindakan. Mengampuni dan melupakan, mengasihi satu dengan lainnya. Ingatlah, jika kau menghakimi orang, kau tidak akan ada waktu untuk mencintainya. Waktu tidak dapat kembali. Hidup bukanlah sebuah VCD PLAYER, yang dapat di
+						backward dan Forward. HIDUP hanya ada tombol PLAY dan STOP saja. Jangan sampai kita melakukan kesalahan yang dapat membayangi kehidupan kita kelak. Yang menjadi sebuah inti hidup adalah "HATI" : Hati yang dihiasi belas kasih dan cinta kasih. CINTA
+						KASIH merupakan nafas kehidupan kita yang sesungguhnya.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+			<h3>FRONT-END BY: NULL</h3>
+		</footer>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#btnShow').click(function (event) {
+					var lf = $('header').css('right');
+					if (lf === '0px') {
+						$('header').css('right', '-15%');
+						$('#background > .shadow').fadeOut(500);
+						$(this).css('transform', 'rotateZ(0deg)');
+					} else {
+						$('header').css('right', '0%');
+						$('#background > .shadow').fadeIn(500).click(function (event) {
+							$('header').css('right', '-15%');
+							$('#background > .shadow').fadeOut(500);
+							$('#btnShow').css('transform', 'rotateZ(0deg)');
+						});
+						$(this).css('transform', 'rotateZ(90deg)');
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

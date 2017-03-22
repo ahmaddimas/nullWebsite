@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Menghadapi Permasalahan</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/detail_artikel.css">
+		<script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!-- shadow -->
+		<div id="background">
+			<div class="shadow"></div>
+		</div>
+
+		<header>
+			<span id="btnShow">
+				<i class="fa fa-bars"></i>
+			</span>
+			<nav id="header">
+				<div id="web-name">Re-Up</div>
+				<hr>
+				<ul>
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="../nullWebsite/index.html">Home</a>
+					</li>
+					<li>
+						<i class="fa fa-image"></i>
+						<a href="../nullWebsite/gallery.html">Gallery</a>
+					</li>
+					<li>
+						<i class="fa fa-users"></i>
+						<a href="about.html">About Us</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<div class="header">
+				<a href="article.html">
+					<div class="back">
+						<i class="fa fa-chevron-left" aria-hidden="true"></i>
+					</div>
+				</a>
+				<h1>
+					Re-Up
+				</h1>
+			</div>
+			<div class="content-image">
+				<div class="image">
+					<img src="images/artikel/5.jpg">
+				</div>
+			</div>
+			<div>
+				<h2>MENGHADAPI PERMASALAHAN</h2>
+				<hr class="hr">
+				<div class="text">
+					<p>
+						Suatu hari di dalam kelas sebuah sekolah, di tengah-tengah pelajaran, pak guru memberi sebuah pertanyaan kepada murid-muridnya : Anak-anak, jika suatu hari kita berjalan-jalan di suatu tempat, di depan kita terbentang sebuah sungai kecil, walaupun
+						tidak telalu lebar tetapi airnya sangat keruh sehingga tidak diketahui berapa dalam sungai tersebut. Sedangkan satu-satunya jembatan yang ada untuk menyeberangi sungai, tampak di kejauhan berjarak kira-kira setengah kilometer dari tempat kita
+						berdiri.
+						<br><br>
+						"Pertanyaan saya adalah, apa yang akan kalian perbuat untuk menyeberangi sungai tersebut dengan cepat dan selamat? Pikirkan baik-baik, jangan sembarangan menjawab. Jawablah dengan memberi alasan kenapa kalian memilih jalan itu. Tuliskan jawaban
+						kalian di selembar kertas. Kita akan diskusikan setelah ini." Kata Pak Guru
+						<br><br>
+						Seisi kelas segera ramai, masing-masing anak memberi jawaban yang beragam. Setelah beberapa saat menunggu murid-murid menjawab di kertas, pak guru segera mengumpulkan kertas dan mulailah acara diskusi. Ada sekelompok anak pemberani yang menjawab:
+						kumpulkan tenaga dan keberanian, ambil ancang-ancang dan lompat ke seberang sungai. Ada yang menjawab, kami akan langsung terjun ke sungai dan berenang sampai ke seberang.
+						<br><br>
+						Kelompok yang lain menjawab : Kami akan mencari sebatang tongkat panjang untuk membantu menyeberang dengan tenaga lontaran dari tongkat tersebut. Dan ada pula yang menjawab : Saya akan berlari secepatnya ke jembatan dan menyeberangi sungai, walaupun
+						agak lama karena jarak yang cukup jauh, tetapi lari dan menyeberang melalui jembatan adalah yang paling aman.
+						<br><br>
+						Setelah mendengar semua jawaban anak-anak, pak guru berkata, "Bagus sekali jawaban kalian. Yang menjawab melompat ke seberang, berarti kalian mempunyai semangat berani mencoba. Yang menjawab turun ke air berarti kalian mengutamakan praktek. Yang
+						memakai tongkat berarti kalian pintar memakai unsur dari luar untuk sampai ke tujuan. Sedangkan yang berlari ke jembatan untuk menyeberang berarti kalian lebih mengutamakan keamanan. Bapak senang kalian memiliki alasan atas jawaban itu. Semua jalan
+						yang kalian tempuh adalah positif dan baik selama kalian tahu tujuan yang hendak dicapai. Asalkan kalian mau berusaha dengan keras, tahu target yang hendak dicapai, tidak akan lari gunung di kejar, pasti tujuan kalian akan tercapai. Pesan bapak,
+						mulai dari sekarang dan sampai kapanpun, Kalian harus lebih rajin belajar dan berusaha menghadapi setiap masalah yang muncul agar berhasil sampai ke tempat tujuan".
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+			<h3>FRONT-END BY: NULL</h3>
+		</footer>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#btnShow').click(function (event) {
+					var lf = $('header').css('right');
+					if (lf === '0px') {
+						$('header').css('right', '-15%');
+						$('#background > .shadow').fadeOut(500);
+						$(this).css('transform', 'rotateZ(0deg)');
+					} else {
+						$('header').css('right', '0%');
+						$('#background > .shadow').fadeIn(500).click(function (event) {
+							$('header').css('right', '-15%');
+							$('#background > .shadow').fadeOut(500);
+							$('#btnShow').css('transform', 'rotateZ(0deg)');
+						});
+						$(this).css('transform', 'rotateZ(90deg)');
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

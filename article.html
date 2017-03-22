@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Artikel</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/artikel.css">
+		<script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- shadow -->
+		<div id="background">
+			<div class="shadow"></div>
+		</div>
+
+		<header>
+			<span id="btnShow">
+				<i class="fa fa-bars"></i>
+			</span>
+			<nav id="header">
+				<div id="web-name">Re-Up</div><hr>
+				<ul>
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<i class="fa fa-image"></i>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<i class="fa fa-users"></i>
+						<a href="about.html">About Us</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<div class="header">
+				<h1>
+					Artikel
+				</h1>
+			</div>
+
+			<div class="content even">
+				<div class="container">
+					<div class="text">
+						<a class="text_article" href="detail_article_1_bukan_vcd.html">
+							<h3>HIDUP BUKAN VCD PLAYER</h3>
+						</a>
+						<p>Cerita tentang kehidupan yang tak ada pilihan kembali, yang ada hanya pilihan berhenti atau lanjutkan.</p>
+					</div>
+					<div class="image">
+						<img src="images/Artikel/4.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="content odd">
+				<div class="container">
+					<div class="image2">
+						<img src="images/Artikel/1.png">
+					</div>
+					<div class="text2">
+						<a class="text_article" href="detail_article_2_anisa.html">
+							<h3>KALUNG ANISA</h3>
+						</a>
+						<p>
+							Sebuah cerita inspiratif tentang anisa dengan kalung mutiaranya. Tentang mengikhlaskan yang telah ditakdirkan hilang
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content even">
+				<div class="container">
+					<div class="text">
+						<a class="text_article" href="detail_article_3_pohonapel.html">
+							<h3>POHON APEL DAN ANAK KECIL</h3>
+						</a>
+						<p>Sebuah cerita tentang cerminan kehidupan kita, tentang diri kita kepada orang tua kita</p>
+					</div>
+					<div class="image">
+						<img src="images/Artikel/6.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="content odd">
+				<div class="container">
+					<div class="image2">
+						<img src="images/Artikel/2.png">
+					</div>
+					<div class="text2">
+						<a class="text_article" href="detail_article_4_ayam.html">
+							<h3>AYAM KAMPUNG DAN AYAM NEGERI</h3>
+						</a>
+						<p>Cerita tentang pilihan kehidupan, menjadi ayam kampung yang bebas atau ayam negeri yang bergelimang kenikmatan.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content even">
+				<div class="container">
+					<div class="text">
+						<a class="text_article" href="detail_article_5_elang.html">
+							<h3>KEHIDUPAN SANG ELANG</h3>
+						</a>
+						<p>Cerita tentang pilihan menunggu mati atau melanjutkan hidup dengan melalui proses yang sangat amat menyakitkan</p>
+					</div>
+					<div class="image">
+						<img src="images/Artikel/3.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="content odd">
+				<div class="container">
+					<div class="image2">
+						<img src="images/Artikel/5.png">
+					</div>
+					<div class="text2">
+						<a class="text_article" href="detail_article_6_menghadapi_masalah.html">
+							<h3>MENGHADAPI MASALAH</h3>
+						</a>
+						<p>
+							Cerita tentang bagaimana seseorang menghadapi permasalah dalam kehidupan
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<a href="#">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</a>
+			<a href="#">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+			<h3>FRONT-END BY: NULL</h3>
+		</footer>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#btnShow').click(function (event) {
+					var lf = $('header').css('right');
+					if (lf === '0px') {
+						$('header').css('right', '-15%');
+						$('#background > .shadow').fadeOut(500);
+						$(this).css('transform', 'rotateZ(0deg)');
+					} else {
+						$('header').css('right', '0%');
+						$('#background > .shadow').fadeIn(500).click(function (event) {
+							$('header').css('right', '-15%');
+							$('#background > .shadow').fadeOut(500);
+							$('#btnShow').css('transform', 'rotateZ(0deg)');
+						});
+						$(this).css('transform', 'rotateZ(-90deg)');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
